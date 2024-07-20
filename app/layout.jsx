@@ -1,29 +1,30 @@
-import '@styles/globals.css';
+import "@styles/globals.css";
 
-import Nav from '@components/Nav';
-import Provider from '@components/Provider';
+import Nav from "@components/Nav";
+import Provider from "@components/Provider";
 
 export const metadata = {
-    title: "Promptify",
-    description: 'An emporium of prompts'
+  title: "Promptify",
+  description: "An emporium of prompts",
 };
 
 const RootLayout = ({ children }) => {
   return (
-    <html lang='en'>
-        <body>
-            <div className='main'>
-                <div className='gradient'/>
-            </div>
+    <html lang="en">
+      <body>
+        <Provider>
+          <div className="main">
+            <div className="gradient" />
+          </div>
 
-            <main className='app'>
-              <Nav />
-              {children}
-            </main>
-        </body>
-
+          <main className="app">
+            <Nav />
+            {children}
+          </main>
+        </Provider>
+      </body>
     </html>
-  )
-}
+  );
+};
 
 export default RootLayout;
