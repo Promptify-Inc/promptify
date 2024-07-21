@@ -26,4 +26,4 @@ export const connecToDB = async () => {
     }
 }
 
-HtEktq5hWnCYxyek
+// HtEktq5hWnCYxyek
