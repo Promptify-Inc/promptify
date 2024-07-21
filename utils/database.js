@@ -12,16 +12,18 @@ export const connecToDB = async () => {
 
     try {
         await mongoose.connect(process.env.MONGODB_URI, {
-            dbName: "promptifydB",
+            dbName: "promptifyDB",
             useNewUrlParser: true,
             useUnifiedTopology: true,
         })
 
         isConnected = true;
 
-        console.log('MOngoDB connected')
+        console.log('MongoDB connected')
     } catch (error) {
         console.log("Hey there! It's not your fault, here's the reason below");
         console.log(error);
     }
 }
+
+HtEktq5hWnCYxyek
