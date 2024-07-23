@@ -9,6 +9,9 @@ const handler = NextAuth({
     GoogleProvider({
       clientId: process.env.GOOGLE_ID,
       clientSecret: process.env.GOOGLE_CLIENT_SECRET,
+      httpOptions: {
+        timeout: 40000
+      }
     })
   ],
   callbacks: {
@@ -37,7 +40,7 @@ const handler = NextAuth({
 
         return true
       } catch (error) {
-        console.log("Error checking if user exists: ", error.message);
+        console.log("Detailed error information:", error);
         return false
       }
     },
