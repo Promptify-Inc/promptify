@@ -1,4 +1,4 @@
-import { type } from "express/lib/response";
+// import { type } from "express/lib/response";
 import { Schema, model, models } from "mongoose";
 
 const userSchema = new Schema ({
