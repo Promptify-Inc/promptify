@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import Image from "next/image";
-import { useState, useEffect } from "react";
+import { useEffect, useState } from "react";
 import { signIn, signOut, useSession, getProviders } from "next-auth/react";
 
 const Nav = () => {
@@ -65,7 +65,7 @@ const Nav = () => {
                   }}
                   className='black_btn'
                 >
-                  Sign In
+                  Sign in
                 </button>
               ))}
           </>
@@ -126,9 +126,8 @@ const Nav = () => {
                   }}
                   className='black_btn'
                 >
-                  Sign in 
+                  Sign in
                 </button>
-                
               ))}
           </>
         )}
