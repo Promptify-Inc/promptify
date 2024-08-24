@@ -28,7 +28,7 @@ const MyProfile = () => {
     }
 
     const handleDelete = async () => {
-
+      // pass
     }
   return (
     <Profile 
